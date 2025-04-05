@@ -22,11 +22,17 @@ No manual runs needed — the workflow executes every 5 minutes (or manually) an
 
 data_automation_pipeline/ 
         │ 
+        
         ├── scrape_flipkart.py # Scraper script with smart pagination 
+        
         ├── clean_transform.py # Cleans and transforms scraped data 
+        
         ├── progress.txt # Tracks last scraped page (state memory) 
+        
         ├── books_raw.csv # Appended scraped data 
+        
         ├── books_cleaned.csv # Cleaned output 
+        
         └── .github/ └── workflows/ └── scrape_pipeline.yml # GitHub Actions workflow file
 
 ---
