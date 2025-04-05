@@ -23,7 +23,7 @@ jobs:
           pip install pandas beautifulsoup4 requests
 
       - name: 🕸️ Run Scraping Script
-        run: python scrape_books.py
+        run: python scrape_flipkart.py
 
       - name: 🧹 Run Cleaning Script
         run: python clean_transform.py
