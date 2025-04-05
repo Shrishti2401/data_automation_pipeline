@@ -67,8 +67,11 @@ data_automation_pipeline/
 ---
 ## 📌 Learnings & Highlights
 ✅ Modular ETL pipeline using real-world tools
+
 ✅ Hands-free automation via GitHub Actions
+
 ✅ Progress-tracking for scraping (pagination memory)
+
 ✅ Secure Git commit automation using GitHub token
 
 ---
