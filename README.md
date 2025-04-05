@@ -46,15 +46,15 @@ data_automation_pipeline/
 ### Step 1: [scrape_books.py](scrape_flipkart.py)
 - Scrapes book info (title, price, rating) from [BooksToScrape](http://books.toscrape.com/)
 - Only scrapes one page per run
-- Tracks current page using `progress.txt`
-- Appends new rows to `books_raw.csv`
+- Tracks current page using [page_num.txt](page_num.txt)
+- Appends new rows to [books_to_scrape.csv](books_to_scrape.csv)
 
 ### Step 2: [clean_transform.py](clean_transform.py)
-- Loads `books_raw.csv`
+- Loads [books_to_scrape.csv](books_to_scrape.csv)
 - Removes unwanted characters from prices
 - Converts price to float
 - Drops incomplete rows
-- Saves cleaned data to `books_cleaned.csv`
+- Saves cleaned data to [books_cleaned.csv](cleaned_books.csv)
 
 ### Step 3: [GitHub Actions Workflow](.github/workflows)
 -📄 File: [.github/workflows/scrape_pipeline.yml](.github/workflows/scrape_pipeline.yml)
