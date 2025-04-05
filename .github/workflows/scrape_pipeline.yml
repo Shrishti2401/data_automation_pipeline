@@ -34,4 +34,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add books_to_scrape.csv cleaned_books.csv page_num.txt
           git commit -m "🔄 Update scraped and cleaned data" || echo "No changes to commit"
-          git push
+          git push http://x-access-token:${{ secrets.PERSONAL_ACCESSS_TOKEN}}@github.com/${{ github.repository}} HEAD:main
